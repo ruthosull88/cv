@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head> 
+   <title>Creating CV BIS 1</title>
+   <! -- change font type -->
+   <! -- change colours of headings using css-->
+   <! -- allows image to stay to the right of paragraph -->
+   <style type="text/css">
+
+      *{
+         font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {color:blue}
+      h2, h3 {color:cornflowerblue}
+      h4 {color:darkblue}
+
+      .rightfloat{
+                float:right;
+                margin-right:5px;
+            }
+            body {
+font-family: Arial, sans-serif;
+}
+.navbar {
+background-color: navy;
+overflow: hidden;
+}
+.navbar a {
+float: left;
+display: block;
+color: #c2eaff;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+}
+.navbar a:hover {
+background-color: #bbeffa;
+color: navy;
+}
+.content-section {
+display: none;
+}
+#index-section {
+display: block;
+}
+   
+   </style>
+ <! -- Creates button and message pops up -->  
+ <! -- Changes image when mouse moves over it -->
+   <script type="text/javascript" language="javascript">
+      
+      function popup(){
+         alert("Espresso preparation techniques, coffee history, grinder settings, dosing, milk texturing and introduction to latte art.");
+      } // end of function popup
+
+      function myMouseOver()
+{
+document.imgChar.src ="foodsafety.webp";
+}//myMouseOver
+function myMouseOut()
+{
+document.imgChar.src ="mslogo.png";
+}//myMouseOut
+   </script>
+
+</head>
+<body>
+   <div class="navbar">
+      <a href="file:///Users/ruthosullivan/Library/CloudStorage/OneDrive-UniversityCollegeCork/HTML%20/index.html" onclick="showContent('index')">Index</a>
+      <a href="file:///Users/ruthosullivan/Library/CloudStorage/OneDrive-UniversityCollegeCork/HTML%20/contact_form.html" onclick="showContent('form')">Contact Form</a>
+      <a href="file:///Users/ruthosullivan/Library/CloudStorage/OneDrive-UniversityCollegeCork/HTML%20/experience.html" onclick="showContent('experience')">Experience</a>
+      <a href="file:///Users/ruthosullivan/Library/CloudStorage/OneDrive-UniversityCollegeCork/HTML%20/education.html" onclick="showContent('education')">Eductaion</a>
+  </div>
+   <h1 align="center">My CV </h1>
+   <h2 align="center"> Personal details</h2>
+   <p align="center">
+   <b>Contact details: 083******* Email: R******@gmail.com</b>
+   </p>
+   <! -- creates line across page -->
+   <hr width="580" size="4" align="center" />
+   <p align="center">
+    I am a reliable and conscientious student looking for a part time work opportunity with flexibilty to work evenings throughout the week and weekends. 
+   I recently started my first year of college in UCC, studying Business Information Systems. I am enthusiastic and self-motivated, always looking to develop myself and learn new skills. 
+    I am a team player and enjoy interacting with people.
+   </p>
+   <h2 align="left">Skills</h2>
+   <! -- using divs to float image to thr right of paragraph -->
+   <p>&nbsp;</p>
+        <div class="rightfloat">
+         <img src="foodsafety.webp" width=100px height=100px name=imgChar onmouseover="myMouseOver()" onmouseout="myMouseOut()"/>
+         </div>
+   <! -- create a bullet point list -->      
+   <ul>
+      <li>Microsoft office package: Microsoft Word, Excel, Powerpoint etc.</li>
+    <li>Completed food safety course (food safety HACCP level 1)</li>
+    <li>Communication</li>
+    <li>Numeracy</li>
+    <li>Completed barista course (Orso)</li>
+    <li>Programming skills (python)</li>
+    </ul>
+   <h2 align="left">Activities </h2>
+   <p>I have a keen interest in technology, and I enjoy creative IT drawing and learning modern technology.</p>
+   <p>Coached athletics and spikeball junior cycle students</p>
+   <p>Babysitting</p>
+   <h3 align="left">Certifications and Licences</h3>
+   <h4 align="left">Food safety and HACCP level 1</h4>
+   <p>How to handle food properly, how to store food properly, cleaning and sanitation.</p>
+   
+
+   <h4 align="left">Orso Barista course</h4>
+   <! -- using javascript to create button on webpage -->
+   <form>
+      <input type="button" onclick="popup()" value="See list of barista skills" />
+   </form>
+  <img src="coffee.jpeg" alt="coffee cup" height="100px" width="100px"/>
+
+
+<p>The above image was downloaded from 'pngtree.com' under 'Small Cup PNG, Vector And Transparent Clipart Images'.</p>
+
+<p>
+   <a = href = file:///Users/ruthosullivan/Library/CloudStorage/OneDrive-UniversityCollegeCork/HTML%20/index.html>Back to index</a>
+</p>
+<p>
+   <a = href = "file:///Users/ruthosullivan/Library/CloudStorage/OneDrive-UniversityCollegeCork/HTML%20/education.html">Educational details</a><! -- Links to page -->
+</p>
+<p>
+   <a = href = "file:///Users/ruthosullivan/Library/CloudStorage/OneDrive-UniversityCollegeCork/HTML%20/experience.html">Work Experience</a><! -- Links to page -->
+</p>
+<p>
+   <a = href ="file:///Users/ruthosullivan/Library/CloudStorage/OneDrive-UniversityCollegeCork/HTML%20/contact_form.html">4.Contact form</a>
+</p>
+ </body>
+</html>
